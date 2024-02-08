@@ -24,7 +24,7 @@ public class RNPushNotificationPublisher extends BroadcastReceiver {
 
         final Bundle bundle = intent.getExtras();
 
-        Log.v(LOG_TAG, "onMessageReceived: " + bundle);
+
 
         handleLocalNotification(context, bundle);
     }
@@ -40,7 +40,7 @@ public class RNPushNotificationPublisher extends BroadcastReceiver {
         Application applicationContext = (Application) context.getApplicationContext();
         RNPushNotificationHelper pushNotificationHelper = new RNPushNotificationHelper(applicationContext);
         
-        Log.v(LOG_TAG, "sendNotification: " + bundle);
+
 
         pushNotificationHelper.sendToNotificationCentre(bundle);
     }

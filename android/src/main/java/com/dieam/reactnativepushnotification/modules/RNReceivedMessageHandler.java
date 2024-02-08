@@ -183,7 +183,7 @@ public class RNReceivedMessageHandler {
         }
 
         if (config.getNotificationForeground() || !isForeground) {
-            Log.v(LOG_TAG, "sendNotification: " + bundle);
+     
 
             pushNotificationHelper.sendToNotificationCentre(bundle);
         }
