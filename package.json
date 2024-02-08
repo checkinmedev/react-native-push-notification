@@ -1,5 +1,5 @@
 {
-  "name": "react-native-push-notification",
+  "name": "checkinme-react-native-push-notification",
   "version": "7.4.0",
   "description": "React Native Local and Remote Notifications",
   "main": "index.js",
