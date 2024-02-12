@@ -141,16 +141,9 @@ public class RNPushNotificationHelper {
         RNPushNotificationAttributes notificationAttributes = new RNPushNotificationAttributes(bundle);
         String id = notificationAttributes.getId();
 
-
-
         SharedPreferences.Editor editor = scheduledNotificationsPersistence.edit();
         editor.putString(id, notificationAttributes.toJson().toString());
         editor.apply();
-
-        boolean isSaved = scheduledNotificationsPersistence.contains(id);
-        if (!isSaved) {
-
-        }
 
         sendNotificationScheduledCore(bundle);
     }
